@@ -1,0 +1,185 @@
+/* Main section */
+.site-hero{
+  width: 100%;
+  height: 450px;
+  background: url("../img/about-us_hero.png");
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.hero-text{
+  width: 34.3%;
+  padding-top: 11%;
+  margin-left: 6.6%;
+}
+
+.hero-text h1{
+  font-family: 'Fraunces', sans-serif;
+  color: #FEFCF7;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.hero-text p {
+  font-family: 'Barlow';
+  color: #FEFCF7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 6%;
+}
+
+/* Commitment section */
+.commitment{
+  margin: 12% 4% 12% 4%;
+}
+.commmitment-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commitment-image{
+  background: url("../img/our-commitment.jpg");
+  width: 40%;
+  height: 500px;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.commitment-texts{
+  width: 45%;
+}
+.commitment-texts h2{
+  font-family: 'Fraunces 9pt';
+  color: #333d4b;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 7%;
+}
+.commitment-texts p{
+  font-family: 'Barlow';
+  color: #333D4B;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 992px){
+  .hero-text{
+    width: 50%;
+  }
+  .commitment-image{
+    width: 45%;
+  }
+  .commmitment-items{
+    margin: 12% 2% 12% 2%;
+  }
+  .commitment-texts{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .container{
+    padding: 0 1%;
+  }
+  .site-hero{
+    background: url("../img/Bitmap-about-tablet.png")
+    height: 400px;
+  }
+  .hero-text{
+    width: 70%;
+  }
+  .hero-text h1{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero-text p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .commmitment-items{
+    margin: 12% 0 12% 0;
+  }
+  .commitment-image{
+    background: url("../img/commitment-tablet.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 45%;
+  }
+  .commitment-texts{
+    width: 55%;
+  }
+  .commitment-texts h2{
+    font-size: 32px;
+    margin-bottom: 3%;
+  }
+  .commitment-texts p{
+    line-height: 25px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 700px){
+  .commmitment-items{
+    align-items: flex-start;
+  }
+  .commitment-image{
+    height: 530px;
+  }
+  .commitment-texts{
+    border: 3px solid #fff;
+  }
+  .commitment-texts h2{
+    margin-bottom: 1%;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 567px){
+  .site-hero{
+    background: url("../img/Bitmap-about-mobile.png");
+    height: 400px;
+    background-position: right;
+  }
+  .hero-text{
+    width: 90%;
+    padding-top: 30%;
+    text-align: center;
+    margin: auto;
+    place-items: center;
+  }
+  .commmitment-items{
+    flex-direction: column;
+  }
+  .commitment-image{
+    background: url("../img/commitment-phone.jpg");
+    width: 100%;
+    height: 50%px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+}

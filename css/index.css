@@ -1,0 +1,475 @@
+/* Main section */
+.site-hero {
+  width: 100%;
+  height: 600px;
+  background: url("../img/hero-bcg.png");
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.hero-text {
+  width: 42%;
+  padding-top: 9%;
+  margin-left: 7%;
+}
+
+.hero-text h1 {
+  font-family: "Fraunces", sans-serif;
+  color: #fefcf7;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.hero-text p {
+  font-family: "Barlow";
+  color: #fefcf7;
+  margin: 6% 0 8% 0;
+  width: 90%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/* Collection section */
+.collection {
+  margin-top: 5% auto 15% auto;
+  padding: 0 5%;
+  width: 100%;
+  height: auto;
+}
+
+.collection-items__wrapper {
+  background-image: url(../img/our-collection.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  min-height: 175px;
+}
+
+.collection-items {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -6%;
+  width: 100%;
+}
+
+.collection-item h3 {
+  font-family: "Fraunces";
+  margin: 28% 0 9% 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333d4b;
+  width: 100%;
+}
+
+.collection-item p {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333d4b;
+}
+
+/* Why section */
+.why-section {
+  margin: 12rem 0;
+}
+
+.about-us {
+  width: 100%;
+  height: 570px;
+  background-color: #293039;
+  border-radius: 10px;
+}
+
+.about-us h2 {
+  font-family: "Fraunces";
+  text-align: center;
+  padding-top: 8.75%;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+
+.about-us p {
+  font-family: "Barlow", sans-serif;
+  width: 38%;
+  margin: auto;
+  padding: 2.5% 0 7% 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.about-us .cards {
+  display: grid;
+  grid-template-columns: 27% 27% 27%;
+  /* grid-template-rows: 382px; */
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.about-us .cards .card {
+  background: #0e8784;
+  border-radius: 8px;
+  text-align: center;
+  /* margin-bottom: 200px; */
+}
+
+.about-us .cards .card img {
+  padding-top: 72px;
+}
+.about-us .cards .card:last-child img {
+  padding-top: 95px;
+}
+.about-us .cards .card h3 {
+  font-family: "Fraunces";
+  padding: 56px 0 24px 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.about-us .cards .card p {
+  width: 70%;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+/* Working systems section */
+.working-systems {
+  padding: 13.3% 7.3% 0;
+  margin-bottom: 12.5rem;
+}
+
+.working-items__wrapper {
+  font-weight: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.work-line {
+  margin: 7% 0 5% 0;
+  width: 78%;
+  height: 2px;
+  background-color: #fdd6ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-circle {
+  background: #fefcf7;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #0e8784;
+}
+
+.work-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-card {
+  width: 25%;
+  margin-bottom: 64px;
+}
+
+.work-card-num {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+
+.work-card-name {
+  font-family: "Fraunces";
+  font-weight: 900;
+  width: 90%;
+  padding: 38px 0 42px;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+
+.work-card-desc {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px) {
+  .hero-text {
+    width: 50%;
+    padding-top: 10%;
+  }
+  .hero-text h1 {
+    font-size: 63px;
+  }
+  .collection-items__wrapper {
+    min-height: 140px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-text {
+    padding-top: 12%;
+  }
+  .hero-text h1 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  .collection-items__wrapper {
+    min-height: 120px;
+  }
+  .collection-item img {
+    width: 100%;
+  }
+  .collection-item h3 {
+    font-size: 20px;
+  }
+  .about-us .cards .card:last-child img {
+    padding-top: 90px;
+  }
+  .work-card {
+    width: 29%;
+  }
+  .work-card-name {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .site-hero {
+    height: 500px;
+    background: url("../img/Bitmap-tablet.png");
+    background-size: cover;
+  }
+  .hero-text {
+    width: 59%;
+  }
+  .hero-text h1 {
+    font-size: 49px;
+    line-height: 48px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .collection {
+    padding: 0;
+  }
+  .collection-items__wrapper {
+    min-height: 90px;
+  }
+  .collection-items {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: auto auto auto auto;
+    gap: 0;
+    margin-top: 0;
+  }
+  .collection-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  .collection-item-texts {
+    flex-wrap: wrap;
+    padding-top: 5%;
+    width: 50%;
+  }
+  .collection-item img {
+    height: 193px;
+    width: 255px;
+  }
+  .collection-item h3 {
+    margin: 0;
+    text-align: start;
+  }
+  .collection-item p {
+    text-align: start;
+  }
+  .about-us h2 {
+    font-size: 32px;
+  }
+  .about-us p {
+    width: 75%;
+  }
+  .about-us .cards {
+    grid-template-columns: 78%;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0;
+    row-gap: 24px;
+  }
+  .about-us .cards .card {
+    display: flex;
+    align-items: center;
+    text-align: end;
+  }
+  .about-us .cards .card img {
+    padding: 0 10% 0 12%;
+  }
+  .about-us .cards .card:last-child img {
+    padding-top: 9px;
+  }
+  .about-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-us .cards .card h3 {
+    padding: 40px 0 0 0;
+    text-align: start;
+  }
+  .about-us .cards .card p {
+    margin: 0;
+    padding-bottom: 7%;
+    width: 90%;
+    text-align: start;
+  }
+  .work-card {
+    width: 30%;
+  }
+  .work-card-name {
+    width: 100%;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  .working-systems {
+    padding-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .site-hero{
+    height: 600px;
+    background: url("../img/Bitmap-mobile.png");
+    background-size: cover;
+    width: 100%;
+  }
+  .hero-text{
+    width: 81%;
+    margin: auto;
+    padding-top: 30%;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 49px;
+    /* margin: auto; */
+  }
+  .hero-text p{
+    text-align: center;
+    margin: 6% auto 8% auto;
+  }
+  .collection-items__wrapper {
+    min-height: 70px;
+    width: 100%;
+  }
+  .collection-items{
+    width: 100%;
+    place-items: center;
+  }
+  .collection-item{
+    flex-direction: column;
+    place-items: center;
+  }
+  .collection-item-texts{
+    width: 70%;
+  }
+  .collection-item-texts h3{
+    text-align: center;
+  }
+  .collection-item-texts p{
+    text-align: center;
+    padding: 4% 0 12% 0;
+  }
+  .about-us .cards .card{
+    flex-direction: column;
+  }
+  .about-us .cards .card img{
+    padding-top: 20%;
+  }
+  .about-us .cards .card:last-child img {
+    padding-top: 25%;
+  }
+  .about-card-text{
+    place-items: center;
+  }
+  .about-card-text p{
+    text-align: center !important;
+    width: 40%;
+    padding-bottom: 15% !important;
+  }
+  .why-section{
+    margin: 12rem 0 50rem;
+  }
+  .working-items__wrapper{
+    text-align: center;
+  }
+  .working-systems{
+    display: block !important;
+  }
+  .work-line{
+    display: none;
+  }
+  .work-cards{
+    flex-direction: column;
+  }
+  .work-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .work-card-name{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 414px){
+  .hero-text{
+    width: 100%;
+  }
+  .collection-items__wrapper{
+    min-height: 55px;
+  }
+  .hero-text h1{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 305px){
+  .about-card-text h3{
+    text-align: center !important;
+  }
+  .collection-items__wrapper{
+    min-height: 48px;
+  }
+}
